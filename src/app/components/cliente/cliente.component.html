@@ -1,0 +1,36 @@
+<h4>Clientes</h4>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Telefono</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Fecha de Registro</th>
+            <th>Numero de Documento</th>
+            <th>Vip</th>
+            <th>Eliminado</th>
+            <th>Tipo de Documento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of clientes">
+            <td>{{cliente.id}}</td>
+            <td>{{cliente.nombre}}</td>
+            <td>{{cliente.apaterno}}</td>
+            <td>{{cliente.amaterno}}</td>
+            <td>{{cliente.telefono}}</td>
+            <td>{{cliente.fnacimiento}}</td>
+            <td>{{cliente.fregistro}}</td>
+            <td>{{cliente.numerodocumento}}</td>
+            <td>{{cliente.vip.nombre}}</td>
+            <td>{{cliente.eliminado}}</td>
+            <td>{{cliente.tipodocumento.nombre}}</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
